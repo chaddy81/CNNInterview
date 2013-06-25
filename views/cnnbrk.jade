@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div.tweets
+    div.column1
+    div.column2
+        
+  script.
+    $(function() {
+      $.ajax({
+        type:'POST',
+        url: 'http://localhost:30000/cnnbrk-tweets'
+      }).done(function(data) {
+        console.log(data);
+        $.each(data, function(k,v){    
+          if(k <= 4) {
+            $(".tweets .column1").append('<p>' + v.text + '</p>');
+          }else{
+            $(".tweets .column2").append('<p>' + v.text + '</p>');
+          }
+        });
+      });
+    });

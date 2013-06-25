@@ -18,6 +18,16 @@ p {
   font-size:137.5%;
   font-weight:400;
   line-height: 1.45;
+  margin:0;
+}
+
+small {
+  display:block;
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size:100%;
+  font-weight:400;
+  line-height:normal;
+  margin-top:10px;
 }
 
 div[class^='column'] {
@@ -29,6 +39,10 @@ div[class^='column'] {
   float:left;
   padding:20px;
   width:50%;
+}
+
+div[class^='column'] .tweet {
+  margin-bottom:30px;
 }
 
 @media (min-width: 800px) and (max-width: 1100px) {
@@ -67,4 +81,5 @@ div[class^='column'] {
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
   }
+  
 }

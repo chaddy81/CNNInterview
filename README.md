@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Interview Challenge 1
 You have 24 hours from the receipt of this document to:
 
@@ -65,9 +64,3 @@ should list all ten tweets divided into two columns.
 [5]: http://github.com
 [6]: http://bitbucket.org
 [7]: https://twitter.com/cnnbrk
-=======
-CNNInterview
-============
-
-CNN coding test
->>>>>>> f482cebd3be99853df72fe2fc0f785a986287385

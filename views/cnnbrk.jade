@@ -2,10 +2,16 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
   div.tweets
     div.column1
     div.column2
-   
+  
+  script(id="tweet", type="text/html")
+    div.tweet
+      p {{{text}}}
+      small Tweeted By 
+        a(href="http://twitter.com/{{name}}"){{name}}
+        span  at {{created_at}}
+
   script(src="/javascripts/tweets.js")     
   script(src="/javascripts/scripts.js")

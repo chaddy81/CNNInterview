@@ -30,6 +30,19 @@ small {
   margin-top:10px;
 }
 
+.button {
+  background:#464646;
+  border-radius:3px;
+  color:#fff;
+  font-size:100%;
+  padding:9px 12px;
+  text-decoration:none;
+}
+
+.button:hover {
+  background:#333332;
+}
+
 div[class^='column'] {
   -ms-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -48,18 +61,31 @@ div[class^='column'] .tweet {
 @media (min-width: 800px) and (max-width: 1100px) {
   body {
     font-size:95%;
-    -webkit-transition-property: font-size;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
+    -ms-transition-property: font-size 0.3s ease;
+    -moz-transition-property: font-size 0.3s ease;
+    -o-transition-property: font-size 0.3s ease;
+    -webkit-transition-property: font-size 0.3s ease;
+    transition-property: font-size 0.3s ease;
+  }
+  
+  small {
+    font-size:95%;
+    -ms-transition-property: font-size 0.3s ease;
+    -moz-transition-property: font-size 0.3s ease;
+    -o-transition-property: font-size 0.3s ease;
+    -webkit-transition-property: font-size 0.3s ease;
+    transition-property: font-size 0.3s ease;
   }
 }
 
 @media (min-width: 601px) and (max-width: 799px) {
   body {
     font-size:90%;
-    -webkit-transition-property: font-size;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
+    -ms-transition-property: font-size 0.3s ease;
+    -moz-transition-property: font-size 0.3s ease;
+    -o-transition-property: font-size 0.3s ease;
+    -webkit-transition-property: font-size 0.3s ease;
+    transition-property: font-size 0.3s ease;
   }
 }
 
@@ -77,9 +103,11 @@ div[class^='column'] .tweet {
   
   body {
     font-size:80%;
-    -webkit-transition-property: font-size;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
+    -ms-transition-property: font-size 0.3s ease;
+    -moz-transition-property: font-size 0.3s ease;
+    -o-transition-property: font-size 0.3s ease;
+    -webkit-transition-property: font-size 0.3s ease;
+    transition-property: font-size 0.3s ease;
   }
   
 }
